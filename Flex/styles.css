@@ -1,0 +1,61 @@
+/* Resetando margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Container flexível */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #d0f7f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo para os itens flexíveis */
+.flex-item {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade - em telas menores */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
